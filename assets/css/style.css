@@ -702,7 +702,7 @@ main {
   box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
 }
 
-.project-card::after {
+.project-card::after img {
   content: "";
   position: absolute;
   inset: 0;
@@ -710,10 +710,6 @@ main {
   transition: var(--transition-1);
 }
 
-.project-card:is(:hover, :focus)::after {
-  background: hsla(0, 0%, 100%, 0.1);
-  backdrop-filter: blur(0.5px);
-}
 
 .project-card .card-content {
   position: absolute;
@@ -1381,4 +1377,8 @@ textarea.input-field {
   
 }
 
-
+.h-25 {
+  height: 70vh;
+  object-fit: cover;
+  object-position: top;
+}
