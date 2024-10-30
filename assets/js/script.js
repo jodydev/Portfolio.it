@@ -1,17 +1,6 @@
 'use strict';
 
-/**
- * element toggle function
- */
-
 const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
-/**
- * header sticky & go to top
- */
-
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 
@@ -27,12 +16,6 @@ window.addEventListener("scroll", function () {
 
 });
 
-
-
-/**
- * navbar toggle
- */
-
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 
@@ -44,11 +27,6 @@ navToggleBtn.addEventListener("click", function () {
 
 });
 
-
-
-/**
- * skills toggle
- */
 
 const toggleBtnBox = document.querySelector("[data-toggle-box]");
 const toggleBtns = document.querySelectorAll("[data-toggle-btn]");

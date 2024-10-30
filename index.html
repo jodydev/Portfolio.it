@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jody | Portfolio (it)</title>
 
-    <!-- 
-    - favicon
-  -->
     <link rel="Website icon" type="png" href="./assets/images/favicon.png" />
-
-    <!-- 
-    - custom css link
-  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- 
-    - google font link
-  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,23 +41,30 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li>
-              <a href="#home" class="navbar-link">Home.</a>
+              <a href="#home" class="navbar-link" data-i18n="home">Home.</a>
+            </li>
+            
+            <li>
+              <a href="#about" class="navbar-link" data-i18n="about">Chi sono.</a>
+            </li>
+            
+            <li>
+              <a href="#skills" class="navbar-link" data-i18n="skills">Competenze.</a>
+            </li>
+            
+            <li>
+              <a href="#portfolio" class="navbar-link" data-i18n="projects">Progetti.</a>
+            </li>
+            
+            <li>
+              <a href="#contact" class="navbar-link" data-i18n="contacts">Contatti.</a>
             </li>
 
             <li>
-              <a href="#about" class="navbar-link">Altro.</a>
-            </li>
-
-            <li>
-              <a href="#skills" class="navbar-link">Competenze.</a>
-            </li>
-
-            <li>
-              <a href="#portfolio" class="navbar-link">Progetti.</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link">Contatti.</a>
+              <label class="switch">
+                <input type="checkbox" id="languageToggle" />
+                <span class="slider"></span>
+              </label>
             </li>
           </ul>
         </nav>
@@ -81,121 +77,121 @@
         - #HERO
       -->
 
-        <section class="hero" id="home">
-          <figure class="hero-banner">
-            <picture>
-              <source
-                srcset="./assets/images/avatar-1.png"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="./assets/images/avatar-1.png"
-                media="(min-width: 500px)"
-              />
-              <img
-                src="./assets/images/avatar-1.png"
-                alt="My Avatar"
-                class="w-100"
-              />
-            </picture>
-          </figure>
-
-          <div class="hero-content">
-            <h2 class="h2 hero-title">Software Developer</h2>
-
-            <a href="#contact" class="btn btn-primary">Contattami</a>
-          </div>
-
-          <ul class="hero-social-list">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jody-ossino/"
-                class="hero-social-link"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <div class="tooltip">Linkedin</div>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/jodydev" class="hero-social-link">
-                <ion-icon name="logo-github"></ion-icon>
-                <div class="tooltip">Git Hub</div>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://twitter.com/jody_ossino_"
-                class="hero-social-link"
-              >
-                <ion-icon name="logo-twitter"></ion-icon>
-                <div class="tooltip">Twitter</div>
-              </a>
-            </li>
-          </ul>
-
-          <a href="#stats" class="scroll-down">Scorri</a>
-        </section>
+      <section class="hero" id="home">
+        <figure class="hero-banner">
+          <picture>
+            <source
+              srcset="./assets/images/avatar-1.png"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./assets/images/avatar-1.png"
+              media="(min-width: 500px)"
+            />
+            <img
+              src="./assets/images/avatar-1.png"
+              alt="My Avatar"
+              class="w-100"
+            />
+          </picture>
+        </figure>
+      
+        <div class="hero-content">
+          <h2 class="h2 hero-title" data-i18n="software_developer">Software Developer</h2>
+      
+          <a href="#contact" class="btn btn-primary" data-i18n="contact_me">Contattami</a>
+        </div>
+      
+        <ul class="hero-social-list">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jody-ossino/"
+              class="hero-social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <div class="tooltip" data-i18n="linkedin">Linkedin</div>
+            </a>
+          </li>
+      
+          <li>
+            <a href="https://github.com/jodydev" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
+              <div class="tooltip" data-i18n="github">Git Hub</div>
+            </a>
+          </li>
+      
+          <li>
+            <a
+              href="https://twitter.com/jody_ossino_"
+              class="hero-social-link"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+              <div class="tooltip" data-i18n="twitter">Twitter</div>
+            </a>
+          </li>
+        </ul>
+      
+        <a href="#stats" class="scroll-down" data-i18n="scroll_down">Scorri</a>
+      </section>
 
         <!-- 
         - #STATS
       -->
 
-        <section class="stats" id="stats">
-          <ul class="stats-list">
-            <li>
-              <a href="#" class="stats-card">
-                <div class="card-icon">
-                  <img
-                    src="./assets/images/stats-card_icon-1.png"
-                    alt="Badge icon"
-                  />
-                </div>
-
-                <h2 class="h2 card-title">
-                  2+ <strong>Anni di Esperienza</strong>
-                </h2>
-
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="stats-card">
-                <div class="card-icon">
-                  <img
-                    src="./assets/images/stats-card_icon-2.png"
-                    alt="Checkmark icon"
-                  />
-                </div>
-
-                <h2 class="h2 card-title">
-                  10+ <strong>Progetti Completati</strong>
-                </h2>
-
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="stats-card">
-                <div class="card-icon">
-                  <img
-                    src="./assets/images/stats-card_icon-3.png"
-                    alt="Peoples rating icon"
-                  />
-                </div>
-
-                <h2 class="h2 card-title">
-                  10+ <strong>Clienti Felici</strong>
-                </h2>
-
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </section>
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/stats-card_icon-1.png"
+                  alt="Badge icon"
+                />
+              </div>
+      
+              <h2 class="h2 card-title">
+                2+ <strong data-i18n="years_experience">Anni di Esperienza</strong>
+              </h2>
+      
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+      
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/stats-card_icon-2.png"
+                  alt="Checkmark icon"
+                />
+              </div>
+      
+              <h2 class="h2 card-title">
+                10+ <strong data-i18n="projects_completed">Progetti Completati</strong>
+              </h2>
+      
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+      
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img
+                  src="./assets/images/stats-card_icon-3.png"
+                  alt="Peoples rating icon"
+                />
+              </div>
+      
+              <h2 class="h2 card-title">
+                10+ <strong data-i18n="happy_clients">Clienti Felici</strong>
+              </h2>
+      
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
 
         <!-- 
         - #ABOUT
@@ -511,9 +507,9 @@
                 </h2>
 
                 <p class="section-text">
-                  Il mio percorso di apprendimento è arricchito di certificazioni e
-                  attestati che dimostrano le mie competenze e la mia
-                  professionalità.
+                  Il mio percorso di apprendimento è arricchito di
+                  certificazioni e attestati che dimostrano le mie competenze e
+                  la mia professionalità.
                 </p>
               </div>
             </li>
@@ -699,8 +695,6 @@
               </div>
             </li>
 
-            
-
             <li>
               <a href="https://jplay-zone.vercel.app" class="project-card">
                 <figure class="card-banner">
@@ -721,10 +715,7 @@
             </li>
 
             <li>
-              <a
-                href="https://braglia.vercel.app/"
-                class="project-card"
-              >
+              <a href="https://braglia.vercel.app/" class="project-card">
                 <figure class="card-banner">
                   <img
                     src="./assets/images/braglia.png"
@@ -787,12 +778,8 @@
               </a>
             </li>
 
-            
             <li>
-              <a
-                href="https://app.7seconds.pro"
-                class="project-card"
-              >
+              <a href="https://app.7seconds.pro" class="project-card">
                 <figure class="card-banner">
                   <img
                     src="./assets/images/7secondspro.png"
@@ -809,10 +796,12 @@
                 </div>
               </a>
             </li>
-          
 
             <li>
-              <a href="https://black-stuff-records-new.vercel.app" class="project-card">
+              <a
+                href="https://black-stuff-records-new.vercel.app"
+                class="project-card"
+              >
                 <figure class="card-banner">
                   <img
                     src="./assets/images/black-stuff-records.png.jpeg"
@@ -831,10 +820,7 @@
             </li>
 
             <li>
-              <a
-                href=""
-                class="project-card"
-              >
+              <a href="" class="project-card">
                 <figure class="card-banner">
                   <img
                     src="./assets/images/cash-pilot.png"
@@ -851,8 +837,6 @@
                 </div>
               </a>
             </li>
-
-            
           </ul>
         </section>
 
@@ -1068,5 +1052,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./assets//js/i18n/i18n.js"></script>
   </body>
 </html>
