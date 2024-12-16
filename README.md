@@ -1,3 +1,3 @@
-# Jody Ossino Portfolio 🇮🇹
+# Jody Portfolio 🇮🇹
 
-Puoi visitare il mio portfolio cliccando questo link: https://jodyportfolio-jodydevs-projects.vercel.app
+Puoi visitare il mio portfolio cliccando questo link: https://jodydev.vercel.app
